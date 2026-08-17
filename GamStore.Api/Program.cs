@@ -1,6 +1,12 @@
+using GameStore.Api;
+using GameStore.Api.Dtos;
+
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddValidation();
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+app.MapGamesEndpoints();
 
 app.Run();
