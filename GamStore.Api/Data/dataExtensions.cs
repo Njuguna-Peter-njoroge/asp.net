@@ -15,8 +15,10 @@ dbContect.Database.Migrate();
 }
 public static void AddGameStoreDb(this WebApplicationBuilder builder)
     {
-        
 var connString = builder.Configuration.GetConnectionString("GameStore");
+
+
+
 builder.Services.AddNpgsql<GameStoreContext>(
     connString,
     optionsAction: options => options.UseSeeding((context, _) =>
