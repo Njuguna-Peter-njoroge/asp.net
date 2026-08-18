@@ -65,7 +65,7 @@ return game is null ? Results.NotFound(): Results.Ok(game);
 
 //POST /games
 
-group.MapPost("/", (createGamesDto newGame) =>
+group.MapPost("/", (createGamesDto newGame, GameStoreContext dbContext) =>
 
 {
  GameDto game = new(
