@@ -31,3 +31,8 @@ Content-Type: application/json
 
 ### delete
 DELETE   http://localhost:5181/games/1
+
+
+### genres
+GET  http://localhost:5181/genres
+  
