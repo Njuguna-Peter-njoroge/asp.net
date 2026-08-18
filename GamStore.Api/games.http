@@ -3,31 +3,31 @@
 GET http://localhost:5181/games
 
 ###//get by id
-GET http://localhost:5181/games/3
+GET http://localhost:5181/games/11
 
 ###//update
 POST  http://localhost:5181/games 
 Content-Type: application/json
 
 {
-"Name": "supergetback IV",
-"GenreId": 1,
-"Price": 92.56,
-"ReleaseDate": "2025-10-20"
+"Name": "super",
+"Genre": "platfomer",
+"Price": 32.56,
+"ReleaseDate": "2023-10-20"
 }
 
 
 ###
-PUT  http://localhost:5181/games/2
+PUT  http://localhost:5181/games/3
 Content-Type: application/json
 
 {
-"Name": "supergetback II",
-"GenreId": 1,
-"Price": 99.56,
-"ReleaseDate": "2025-10-20"
+  "name": "Street fighters IV turbo",
+  "genre": "Fighting",
+  "price": 19.19,
+  "releaseDate": "1292-07-07"
 }
 
 
 ### delete
-DELETE   http://localhost:5181/games/3
+DELETE   http://localhost:5181/games/1
